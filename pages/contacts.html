@@ -21,14 +21,14 @@
                     </fieldset>
                     <fieldset>
                         <legend>Leave a comment</legend>
-                        <form class="contactsForm" action="#">
+                        <form class="contactsForm" action="mailto:okrasnovidov1@sheffield.ac.uk" method="post" enctype="text/plain">
                             <div>
                                 <label for="email">Your email</label>
-                                <input type="email">
+                                <input type="email" id="email" name="email" maxlength="254" autocomplete="off" required aria-required="true" aria-label="Email address">
                             </div>
                             <div>
-                                <label for="comment">Your comment</label>
-                                <textarea name="comment" id="yourComment"></textarea>
+                                <label for="yourComment">Your comment</label>
+                                <textarea name="comment" id="yourComment" maxlength="500" required aria-required="true" aria-label="Comment"></textarea>
                             </div>
                             <button type="submit">Submit</button>
                         </form>
@@ -54,6 +54,12 @@
                         <button>
                             <img src="/../../assets/icons/approval.png" alt="approval icon">
                             <label>Testing</label>
+                        </button>
+                    </a>
+                    <a href="./leagal-security.html">
+                        <button>
+                            <img src="../assets/icons/legal-department.png" alt="Legal and Security icon">
+                            <label>Legal and Security</label>
                         </button>
                     </a>
                     <a href="/pages/accessibility.html">

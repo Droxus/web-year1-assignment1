@@ -54,7 +54,6 @@ header {
     background: var(--secondary-color);
     display: grid;
     grid-template-columns: repeat(var(--nav-buttons-num), 1fr);
-    border-radius: var(--default-border-radius) var(--default-border-radius) 0px 0px;
 }
 .navBtns {
     width: 100%;
@@ -326,7 +325,6 @@ footer > fieldset > a > button > img {
     border-radius: var(--default-border-radius);
     height: max-content;
     margin: 20px 0px;
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -335,13 +333,33 @@ footer > fieldset > a > button > img {
     color: var(--main-color);
     font-size: 16px;
 }
-.quiz > fieldset > label {
+.optionLabel {
     margin: 10px 0px;
     background: var(--secondary-color);
     border-radius: var(--default-border-radius);
+    border: 2px solid var(--secondary-color);
     color: var(--main-color);
     padding: 20px 10px;
 }
+
+.optionLabel:hover {
+    background-color: var(--alternative-color); /* Hover background */
+    border-color: var(--border-color);
+}
+.optionLabel input[type="radio"] {
+    margin-right: 10px;
+    display: none;
+}
+input[type="radio"]:checked + .signLbl {
+    background-color: var(--main-color); /* Selected label background */
+    color: var(--default-color); 
+}
+input[type="radio"]:checked ~ span {
+    font-weight: bold;
+    color: var(--main-color); /* Selected option text */
+    background-color: var(--opacity-color);
+}
+
 
 /* === === === Contacts page === === === */
 .contactsSection {
