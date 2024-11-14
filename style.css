@@ -23,6 +23,9 @@ html {
 html * {
     font-family: Arial, Helvetica, sans-serif;
 }
+button {
+    cursor: pointer;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -338,4 +341,90 @@ footer > fieldset > a > button > img {
     border-radius: var(--default-border-radius);
     color: var(--main-color);
     padding: 20px 10px;
+}
+
+/* === === === Contacts page === === === */
+.contactsSection {
+    height: fit-content;
+    width: 100%;
+    background: var(--alternative-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.contactsBlock {
+    width: clamp(200px, 600px, 90%);
+}
+.contactsBlock > fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: var(--default-border-radius);
+    height: max-content;
+    margin: 20px 0px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contactsBlock > fieldset > legend {
+    color: var(--main-color);
+    font-size: 16px;
+}
+.contactsBlock > fieldset > label {
+    margin: 10px 20px;
+    border-radius: var(--default-border-radius);
+    color: var(--main-color);
+    padding: 10px 10px;
+}
+.contactsForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.contactsForm > div {
+    width: 80%;
+    margin: 20px 0px;
+}
+.contactsForm > div > label {
+    width: 100%;
+    color: var(--main-color);
+    font-size: 16px;
+}
+.contactsForm > div > input {
+    width: 100%;
+    margin: 10px 0px;
+    background: var(--secondary-color);
+    border-radius: var(--default-border-radius);
+    color: var(--main-color);
+    padding: 10px 10px;
+    border: none;
+    outline-color: var(--border-color);
+    padding: 15px 10px;
+}
+.contactsForm > div > textarea {
+    resize: vertical;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0px;
+    background: var(--secondary-color);
+    border-radius: var(--default-border-radius);
+    color: var(--main-color);
+    padding: 10px 10px;
+    border: none;
+    outline-color: var(--border-color);
+}
+.contactsForm > button {
+    width: 50%;
+    margin: 10px 0px;
+    background: var(--border-color);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    padding: 10px 10px;
+    border: none;
+    outline-color: var(--border-color);
 }
