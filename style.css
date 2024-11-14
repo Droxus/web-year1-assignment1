@@ -10,12 +10,14 @@ html {
     --alternative-color: #E3C7FF;
     --border-color: #DC73FF;
     --default-color: white;
+    --opacity-color: #CEA7FFCC;
 
     --default-border-radius: 10px;
     --default-icons-size: 42px;
 
     --header-height: 70px;
     --nav-height: 80px;
+    --footer-height: calc(100vh - (var(--header-height) + var(--nav-height)));
     --nav-buttons-num: 4;
 }
 html * {
@@ -96,7 +98,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: var(--footer-height);
 }
 footer > fieldset {
     border: 2px solid var(--border-color);
@@ -193,14 +195,147 @@ footer > fieldset > a > button > img {
     grid-template-rows: 100px calc(100% - 300px) 200px;
 }
 
-/* === === === Food and Drink page === === === */
+/* === === === Food and Drink / Picnic Locations pages === === === */
 
-.homeContent > section {
+.placesContent {
     width: 100%;
     height: 100%;
-}
-.homeContent {
     display: grid;
-    grid-auto-rows: 100%;
+    grid-auto-rows: max-content;
+    row-gap: 2%;
     overflow-y: scroll;
+}
+.placeSection {
+    height: fit-content;
+    width: 100%;
+    background: var(--alternative-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.imageContainer {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+}
+.imageContainer > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+.placeName {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: var(--main-color);
+    font-size: 16px;
+    background: var(--opacity-color);
+    padding: 5px 10px;
+    border-radius: var(--default-border-radius) 0px var(--default-border-radius) var(--default-border-radius);
+}
+.mapIconBlock {
+    position: absolute;
+    background: var(--opacity-color);
+    border-radius: var(--default-border-radius);
+    padding: 4px;
+    bottom: 5px;
+    left: 1px;
+}
+.mapIcon {
+    width: 20px;
+}
+.placeDescriptionBlock {
+    background: var(--secondary-color);
+    border-radius: var(--default-border-radius);
+    color: var(--main-color);
+    padding: 0 10px;
+    width: clamp(200px, 600px, 90%);
+    margin: 0px 0 20px 0px;
+}
+.placeDescriptionLbl {
+    font-size: 14px;
+}
+.placeSection > a {
+    display: block;
+    margin: 20px 0px;
+    width: clamp(200px, 600px, 90%);
+}
+
+/* === === === Quiz page === === === */
+
+.quizContent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: max-content;
+    row-gap: 2%;
+    overflow-y: scroll;
+}
+.quizImg {
+    width: clamp(200px, 600px, 90%);
+    margin: 20px 0px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+.questionSection {
+    height: fit-content;
+    width: 100%;
+    background: var(--alternative-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.quizQn, .quizAn {
+    color: var(--main-color);
+    background: var(--secondary-color);
+    border-radius: var(--default-border-radius);
+    padding: 20px 10px;
+    margin: 10px 0px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.signLbl {
+    background: var(--border-color);
+    color: var(--main-color);
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 24px;
+    margin: 5px 0px;
+}
+.quiz {
+    width: clamp(200px, 600px, 90%);
+}
+.quiz > fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: var(--default-border-radius);
+    height: max-content;
+    margin: 20px 0px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.quiz > fieldset > legend {
+    color: var(--main-color);
+    font-size: 16px;
+}
+.quiz > fieldset > label {
+    margin: 10px 0px;
+    background: var(--secondary-color);
+    border-radius: var(--default-border-radius);
+    color: var(--main-color);
+    padding: 20px 10px;
 }

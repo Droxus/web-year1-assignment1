@@ -4,16 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1: Quiz</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/../../style.css">
 </head>
 <body>
     <header>
-
+        <label class="pageName" for="headerName">Quiz</label>
     </header>
     <main>
-        <footer>
-
-        </footer>
+        <div class="content quizContent">
+            <section class="questionSection">
+                <img class="quizImg" src="../assets/img/river-sheaf.png" alt="Crookes Valley Park">
+                <div class="quiz">
+                    <p class="quizQn" for="quizQuestion">
+                        <label class="signLbl">?</label>
+                        Which river is Sheffield named after?
+                    </p>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <label>
+                            <label class="signLbl">A</label>
+                            River Don
+                            <input type="radio" name="quizQuestion1" value="river_Don">
+                        </label>
+                        <label>
+                            <label class="signLbl">B</label>
+                            River Sheaf
+                            <input type="radio" name="quizQuestion1" value="river_Sheaf">
+                        </label>
+                        <label>
+                            <label class="signLbl">C</label>
+                            River Trent
+                            <input type="radio" name="quizQuestion1" value="river_Trent">
+                        </label>
+                    </fieldset>
+                    <p class="quizAn" for="quizAnswer">
+                        <label class="signLbl">!</label>
+                        Answer: River Sheaf
+                    </p>
+                </div>
+            </section>
+            <section class="questionSection">
+                <img class="quizImg" src="../assets/img/district-national-park.png" alt="Crookes Valley Park">
+                <div class="quiz">
+                    <p class="quizQn" for="quizQuestion">
+                        <label class="signLbl">?</label>
+                        What fraction of Sheffield's land is located within the Peak District National Park?
+                    </p>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <label>
+                            <label class="signLbl">A</label>
+                            Half
+                            <input type="radio" name="quizQuestion2" value="half">
+                        </label>
+                        <label>
+                            <label class="signLbl">B</label>
+                            A third
+                            <input type="radio" name="quizQuestion2" value="third">
+                        </label>
+                        <label>
+                            <label class="signLbl">C</label>
+                            A quarter
+                            <input type="radio" name="quizQuestion2" value="quarter">
+                        </label>
+                    </fieldset>
+                    <p class="quizAn" for="quizAnswer">
+                        <label class="signLbl">!</label>
+                        Answer: A third
+                    </p>
+                </div>
+            </section>
+            <section class="questionSection">
+                <img class="quizImg" src="../assets/img/Bramall-Lane.png" alt="Crookes Valley Park">
+                <div class="quiz">
+                    <p class="quizQn" for="quizQuestion">
+                        <label class="signLbl">?</label>
+                        What is the name of the oldest football stadium in the world, located in Sheffield?
+                    </p>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <label>
+                            <label class="signLbl">A</label>
+                            Anfield
+                            <input type="radio" name="quizQuestion3" value="anfield">
+                        </label>
+                        <label>
+                            <label class="signLbl">B</label>
+                            Old Trafford
+                            <input type="radio" name="quizQuestion3" value="old_Trafford">
+                        </label>
+                        <label>
+                            <label class="signLbl">C</label>
+                            Bramall Lane
+                            <input type="radio" name="quizQuestion3" value="bramall_Lane">
+                        </label>
+                    </fieldset>
+                    <p class="quizAn" for="quizAnswer">
+                        <label class="signLbl">!</label>
+                        Answer: Bramall Lane
+                    </p>
+                </div>
+            </section>
+            <footer>
+                <fieldset>
+                    <legend>Footer</legend>
+                    <a href="/pages/design.html">
+                        <button>
+                            <img src="/../../assets/icons/design.png" alt="design icon">
+                            <label>How I designed it</label>
+                        </button>
+                    </a>
+                    <a href="/pages/contacts.html">
+                        <button>
+                            <img src="/../../assets/icons/contact-mail.png" alt="contact-mail icon">
+                            <label>My contacts</label>
+                        </button>
+                    </a>
+                    <a href="/pages/testing.html">
+                        <button>
+                            <img src="/../../assets/icons/approval.png" alt="approval icon">
+                            <label>Testing</label>
+                        </button>
+                    </a>
+                    <a href="/pages/accessibility.html">
+                        <button>
+                            <img src="/../../assets/icons/accessibility.png" alt="accessibility icon">
+                            <label>Accessibility</label>
+                        </button>
+                    </a>
+                </fieldset>
+            </footer>
+        </div>
     </main>
     <nav class="navBar">
         <a class="navLink" href="/">
