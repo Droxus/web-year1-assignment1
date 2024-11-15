@@ -7,108 +7,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <label class="pageName" for="headerName">Home</label>
+    <header role="banner">
+        <label class="pageName" id="headerName">Home</label>
     </header>
-    <main>
-        <div class="content homeContent">
-            <section id="welcomeBlock">
+    <main role="main">
+        <article class="content homeContent" aria-labelledby="welcomeBlock">
+            <section id="welcomeBlock" aria-labelledby="welcomeTitle">
                 <div class="sectionBlock sectionNameBlock">
-                    <label><b>Welcome!</b></label>
+                    <label id="welcomeTitle"><b>Welcome!</b></label>
                 </div>
                 <div class="sectionBlock introSection">
                     <p>Welcome to my website!</p>
                     <p>Hi I'm <b>Oleksandr Krasnovidov</b>, a 1<sup>st</sup> year student at <u>University of Sheffield</u>.</p>
                     <p>Here, you'll discover:</p>
                     <ul>
-                        <li>Where to get the most delicious wrap and other awesome spots to grab food and drinks.
-                        </li>
+                        <li>Where to get the most delicious wrap and other awesome spots to grab food and drinks.</li>
                         <li>The best place to share a pizza with friends and ideal picnic spots for a relaxed meal.</li>
                         <li>And, to top it off, Pictorial Quiz!</li>
                     </ul>
                     <p>Let's get started and make your campus experience unforgettable!</p>
                 </div>
-                <div class="sectionBlock diamondInfoSection">
+                <div class="sectionBlock diamondInfoSection" aria-labelledby="diamondTitle">
                     <p>
-                        <b>The Diamond</b> is a part of the University of Sheffield.
-                        Housing specialist engineering facilities as well as
-                        seminar room and open plan study spaces.
+                        <b>The Diamond</b> is a part of the University of Sheffield. Housing specialist engineering facilities as well as seminar rooms and open plan study spaces.
                     </p>
                 </div>
             </section>
-            <section id="diamondBlock">
+            <section id="diamondBlock" aria-labelledby="diamondTitle">
                 <div class="sectionBlock sectionNameBlock">
-                    <label><b>The Diamond</b></label>
+                    <label id="diamondTitle"><b>The Diamond</b></label>
                 </div>
                 <div></div>
                 <div class="sectionBlock diamondInfoSection">
                     <p>
-                        <b>The Diamond</b> is a part of the University of Sheffield.
-                        Housing specialist engineering facilities as well as
-                        seminar room and open plan study spaces.
+                        <b>The Diamond</b> is a part of the University of Sheffield. Housing specialist engineering facilities as well as seminar rooms and open plan study spaces.
                     </p>
                 </div>
             </section>
-            <footer>
-                <fieldset>
-                    <legend>Footer</legend>
+            <footer role="contentinfo">
+                <fieldset aria-labelledby="footerLegend">
+                    <legend id="footerLegend">Footer</legend>
                     <a href="./pages/design.html">
-                        <button>
-                            <img src="./assets/icons/design.png" alt="design icon">
+                        <button aria-label="Learn how I designed it">
+                            <img src="./assets/icons/design.png" alt="Design icon">
                             <label>How I designed it</label>
                         </button>
                     </a>
                     <a href="./pages/contacts.html">
-                        <button>
-                            <img src="./assets/icons/contact-mail.png" alt="contact-mail icon">
+                        <button aria-label="View my contacts">
+                            <img src="./assets/icons/contact-mail.png" alt="Contact mail icon">
                             <label>My contacts</label>
                         </button>
                     </a>
                     <a href="./pages/testing.html">
-                        <button>
-                            <img src="./assets/icons/approval.png" alt="approval icon">
+                        <button aria-label="Access testing information">
+                            <img src="./assets/icons/approval.png" alt="Approval icon">
                             <label>Testing</label>
                         </button>
                     </a>
                     <a href="./pages/leagal-security.html">
-                        <button>
+                        <button aria-label="Read legal and security information">
                             <img src="./assets/icons/legal-department.png" alt="Legal and Security icon">
                             <label>Legal and Security</label>
                         </button>
                     </a>
                     <a href="./pages/accessibility.html">
-                        <button>
-                            <img src="./assets/icons/accessibility.png" alt="accessibility icon">
+                        <button aria-label="Learn about accessibility">
+                            <img src="./assets/icons/accessibility.png" alt="Accessibility icon">
                             <label>Accessibility</label>
                         </button>
                     </a>
                 </fieldset>
             </footer>
-        </div>
+        </article>
     </main>
-    <nav class="navBar">
+    <nav class="navBar" aria-label="Primary navigation">
         <a class="navLink" href="/">
-            <button class="navBtns">
-                <img class="icons" src="./assets/icons/home.png" alt="home icon">
+            <button class="navBtns" aria-label="Home">
+                <img class="icons" src="./assets/icons/home.png" alt="Home icon">
                 <label class="navLbl" for="home icon">Home</label>
             </button>
         </a>
         <a class="navLink" href="/pages/food-drink.html">
-            <button class="navBtns">
-                <img class="icons" src="./assets/icons/fast-food.png" alt="fast food icon">
-                <label class="navLbl" for="home icon">Food & Drink</label>
+            <button class="navBtns" aria-label="Food and Drink">
+                <img class="icons" src="./assets/icons/fast-food.png" alt="Fast food icon">
+                <label class="navLbl" for="fast food icon">Food & Drink</label>
             </button>
         </a>
         <a class="navLink" href="/pages/picninc-locations.html">
-            <button class="navBtns">
-                <img class="icons" src="./assets/icons/picnic.png" alt="picnic icon">
-                <label class="navLbl" for="home icon">Picnic</label>
+            <button class="navBtns" aria-label="Picnic">
+                <img class="icons" src="./assets/icons/picnic.png" alt="Picnic icon">
+                <label class="navLbl" for="picnic icon">Picnic</label>
             </button>
         </a>
         <a class="navLink" href="/pages/quiz.html">
-            <button class="navBtns">
-                <img class="icons" src="./assets/icons/chat.png" alt="chat icon">
-                <label class="navLbl" for="home icon">Quiz</label>
+            <button class="navBtns" aria-label="Quiz">
+                <img class="icons" src="./assets/icons/chat.png" alt="Chat icon">
+                <label class="navLbl" for="chat icon">Quiz</label>
             </button>
         </a>
     </nav>

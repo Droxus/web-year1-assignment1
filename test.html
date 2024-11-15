@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Div</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rotating-container">
+        <div class="rotating-box">
+            <div class="front">
+                <p>Question: What is the capital of France?</p>
+            </div>
+            <div class="back">
+                <p>Answer: Paris</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.rotating-container {
+    perspective: 1000px; /* Allows the 3D effect */
+}
+
+.rotating-box {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rotating-box:hover .front,
+.rotating-box:hover .back {
+    transition-delay: 0.1s; /* Add delay to prevent quick flickering */
+}
+
+.rotating-box:hover {
+    transform: rotateY(180deg); /* Rotate 180 degrees when hovered */
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ensures the back is hidden when rotated */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.front {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.back {
+    background-color: #FF5722;
+    color: white;
+    transform: rotateY(180deg); /* Initially hidden behind the front */
+}
+
+
+</style>
+</html>
