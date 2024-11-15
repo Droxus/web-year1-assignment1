@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1: Legal and security</title>
+    <link rel="stylesheet" href="/../../style.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="pageName">Legal and security</h1>
+    </header>
+    <main>
+        <div class="content quizContent">
+            <section class="questionSection" aria-labelledby="contact-info">
+                <div class="contentBlock">
+                    <fieldset>
+                        <legend id="contact-info">Legal and Copyright Considerations</legend>
+                        <p>To ensure legal compliance, I have taken care to follow copyright regulations for all media used on this site. Images sourced from Google Maps, Sheffield university's website official website, and icons from Flaticon have been appropriately credited. These sources provide content that I am permitted to use, and I've included relevant links and references for transparency. This helps to ensure I respect intellectual property rights and avoid any legal conflicts related to copyrighted material.</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="contact-info">Website Security</legend>
+                        <p>In terms of security, I have implemented several basic yet important measures in my contact form. The form is configured with the required attribute for both the email and comment fields to ensure that necessary data is provided. I've also used aria-required and aria-label attributes for accessibility purposes, ensuring that users with disabilities can interact with the form correctly. </p>
+                        <p>Additionally, the form uses enctype="text/plain" to ensure the data is submitted in a simple, non-technical format. While this approach is basic, it ensures that sensitive information like email addresses is handled securely by sending data directly to the designated email address and not storing it on the website itself.</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="contact-info">Image and icon sources</legend>
+                        <ul>
+                            <li>Google maps: https://www.google.com/maps</li>
+                            <li>Sheffield university website: https://www.sheffield.ac.uk</li>
+                            <li>Flaticon: https://www.flaticon.com</li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <footer>
+                <fieldset aria-labelledby="footerLegend">
+                    <legend id="footerLegend">Footer</legend>
+                    <a href="/pages/design.html" aria-label="Learn how I designed it">
+                        <img src="/../../assets/icons/design.png" alt="Design icon">
+                        <span>How I designed it</span>
+                    </a>
+                    <a href="/pages/contacts.html" aria-label="View my contacts">
+                        <img src="/../../assets/icons/contact-mail.png" alt="Contact mail icon">
+                        <span>My contacts</span>
+                    </a>
+                    <a href="/pages/testing.html" aria-label="Access testing information">
+                        <img src="/../../assets/icons/approval.png" alt="Approval icon">
+                        <span>Testing</span>
+                    </a>
+                    <a href="/pages/leagal-security.html" aria-label="Read legal and security information">
+                        <img src="/../../assets/icons/legal-department.png" alt="Legal and Security icon">
+                        <span>Legal and Security</span>
+                    </a>
+                    <a href="/pages/accessibility.html" aria-label="Learn about accessibility">
+                        <img src="/../../assets/icons/accessibility.png" alt="Accessibility icon">
+                        <span>Accessibility</span>
+                    </a>
+                </fieldset>
+            </footer>
+        </div>
+    </main>
+    <nav class="navBar" aria-label="Primary navigation">
+        <a class="navLink navBtns" href="/" aria-label="Home">
+            <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
+            <span class="navLbl">Home</span>
+        </a>
+        <a class="navLink navBtns" href="/pages/food-drink.html" aria-label="Food and Drink">
+            <img class="icons" src="/../../assets/icons/fast-food.png" alt="Fast food icon">
+            <span class="navLbl">Food & Drink</span>
+        </a>
+        <a class="navLink navBtns" href="/pages/picninc-locations.html" aria-label="Picnic">
+            <img class="icons" src="/../../assets/icons/picnic.png" alt="Picnic icon">
+            <span class="navLbl">Picnic</span>
+        </a>
+        <a class="navLink navBtns" href="/pages/quiz.html" aria-label="Quiz">
+            <img class="icons" src="/../../assets/icons/chat.png" alt="Chat icon">
+            <span class="navLbl">Quiz</span>
+        </a>
+    </nav>
 </body>
 </html>

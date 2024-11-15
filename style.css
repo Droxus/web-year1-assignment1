@@ -503,3 +503,33 @@ input[type="radio"]:checked ~ span {
     border: none;
     outline-color: var(--border-color);
 }
+.contentBlock {
+    width: clamp(200px, 600px, 90%);
+}
+
+.contentBlock > fieldset > img {
+    width: clamp(200px, 600px, 100%);
+    border-radius: var(--default-border-radius);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+.contentBlock > fieldset > img:hover {
+    transform: scale(1.2);
+}
+.contentBlock > fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: var(--default-border-radius);
+    height: max-content;
+    margin: 20px 0px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--main-color);
+}
+.contentBlock > fieldset > span {
+    margin: 10px 20px;
+    border-radius: var(--default-border-radius);
+    color: var(--main-color);
+    padding: 10px 10px;
+}

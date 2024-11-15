@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1: Accessibility</title>
+    <link rel="stylesheet" href="/../../style.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="pageName">Accessibility</h1>
+    </header>
+    <main>
+        <div class="content quizContent">
+            <section class="questionSection" aria-labelledby="contact-info">
+                <div class="contentBlock">
+                    <fieldset>
+                        <legend id="contact-info">Accessibility</legend>
+                        <p>My website is designed to provide an inclusive experience by ensuring accessibility for all users. I have implemented several features to create a platform that is both functional and user-friendly for individuals of all abilities.</p>
+                        <p>To enable access without a mouse, my site fully supports keyboard navigation. Users can tab through all interactive elements, which is especially beneficial for those with motor impairments. This feature allows every user to access the same functionalities, regardless of how they navigate the page (WebAIM, n.d.).</p>
+
+<p>I also use descriptive alt text for non-text elements, such as images and icons, which helps visually impaired users better understand visual content through screen readers (W3C, 2018). </p>
+
+<p>Additionally, my site employs high-contrast color schemes, improving readability for users with low vision or color perception difficulties. By adhering to recommended color contrast ratios from the WCAG guidelines, I ensure that my text is legible on all backgrounds, enhancing the overall visual accessibility.</p>
+
+<p>Furthermore, I have structured my code using semantic HTML tags and ARIA (Accessible Rich Internet Applications) labels, providing necessary context to screen readers for users with visual or cognitive disabilities (W3C, 2023). ARIA labels enhance understanding by adding descriptive information to elements, making the site's navigation smoother.</p>
+
+<p>In sum, my website is committed to providing an equitable browsing experience that respects diverse user needs and abilities.
+                        
+                    </fieldset>
+                </div>
+            </section>
+            <footer>
+                <fieldset aria-labelledby="footerLegend">
+                    <legend id="footerLegend">Footer</legend>
+                    <a href="/pages/design.html" aria-label="Learn how I designed it">
+                        <img src="/../../assets/icons/design.png" alt="Design icon">
+                        <span>How I designed it</span>
+                    </a>
+                    <a href="/pages/contacts.html" aria-label="View my contacts">
+                        <img src="/../../assets/icons/contact-mail.png" alt="Contact mail icon">
+                        <span>My contacts</span>
+                    </a>
+                    <a href="/pages/testing.html" aria-label="Access testing information">
+                        <img src="/../../assets/icons/approval.png" alt="Approval icon">
+                        <span>Testing</span>
+                    </a>
+                    <a href="/pages/leagal-security.html" aria-label="Read legal and security information">
+                        <img src="/../../assets/icons/legal-department.png" alt="Legal and Security icon">
+                        <span>Legal and Security</span>
+                    </a>
+                    <a href="/pages/accessibility.html" aria-label="Learn about accessibility">
+                        <img src="/../../assets/icons/accessibility.png" alt="Accessibility icon">
+                        <span>Accessibility</span>
+                    </a>
+                </fieldset>
+            </footer>
+        </div>
+    </main>
+    <nav class="navBar" aria-label="Primary navigation">
+        <a class="navLink navBtns" href="/" aria-label="Home">
+            <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
+            <span class="navLbl">Home</span>
+        </a>
+        <a class="navLink navBtns" href="/pages/food-drink.html" aria-label="Food and Drink">
+            <img class="icons" src="/../../assets/icons/fast-food.png" alt="Fast food icon">
+            <span class="navLbl">Food & Drink</span>
+        </a>
+        <a class="navLink navBtns" href="/pages/picninc-locations.html" aria-label="Picnic">
+            <img class="icons" src="/../../assets/icons/picnic.png" alt="Picnic icon">
+            <span class="navLbl">Picnic</span>
+        </a>
+        <a class="navLink navBtns" href="/pages/quiz.html" aria-label="Quiz">
+            <img class="icons" src="/../../assets/icons/chat.png" alt="Chat icon">
+            <span class="navLbl">Quiz</span>
+        </a>
+    </nav>
 </body>
 </html>
