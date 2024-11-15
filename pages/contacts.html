@@ -8,94 +8,76 @@
 </head>
 <body>
     <header>
-        <label class="pageName" for="headerName">Contacts</label>
+        <h1 class="pageName">Contacts</h1>
     </header>
     <main>
         <div class="content quizContent">
-            <section class="questionSection">
+            <section class="questionSection" aria-labelledby="contact-info">
                 <div class="contactsBlock">
                     <fieldset>
-                        <legend>My contact details</legend>
-                        <label for="myName">My name: Oleksandr Krasnovidov</label>
-                        <label for="myEmail">My email: okrasnovidov1@sheffield.ac.uk</label>
+                        <legend id="contact-info">My contact details</legend>
+                        <span>My name: Oleksandr Krasnovidov</span>
+                        <span>My email: okrasnovidov1@sheffield.ac.uk</span>
                     </fieldset>
                     <fieldset>
                         <legend>Leave a comment</legend>
-                        <form class="contactsForm" action="mailto:okrasnovidov1@sheffield.ac.uk" method="post" enctype="text/plain">
+                        <form class="contactsForm" action="mailto:okrasnovidov1@sheffield.ac.uk" method="post" enctype="text/plain" id="comment-form">
                             <div>
-                                <label for="email">Your email</label>
+                                <label for="email">Your email:</label>
                                 <input type="email" id="email" name="email" maxlength="254" autocomplete="off" required aria-required="true" aria-label="Email address">
                             </div>
                             <div>
-                                <label for="yourComment">Your comment</label>
+                                <label for="yourComment">Your comment:</label>
                                 <textarea name="comment" id="yourComment" maxlength="500" required aria-required="true" aria-label="Comment"></textarea>
                             </div>
-                            <button type="submit">Submit</button>
+                            <button type="submit" aria-label="Submit comment">Submit</button>
                         </form>
                     </fieldset>
                 </div>
             </section>
             <footer>
-                <fieldset>
-                    <legend>Footer</legend>
-                    <a href="/pages/design.html">
-                        <button>
-                            <img src="/../../assets/icons/design.png" alt="design icon">
-                            <label>How I designed it</label>
-                        </button>
+                <fieldset aria-labelledby="footerLegend">
+                    <legend id="footerLegend">Footer</legend>
+                    <a href="/pages/design.html" aria-label="Learn how I designed it">
+                        <img src="/../../assets/icons/design.png" alt="Design icon">
+                        <span>How I designed it</span>
                     </a>
-                    <a href="/pages/contacts.html">
-                        <button>
-                            <img src="/../../assets/icons/contact-mail.png" alt="contact-mail icon">
-                            <label>My contacts</label>
-                        </button>
+                    <a href="/pages/contacts.html" aria-label="View my contacts">
+                        <img src="/../../assets/icons/contact-mail.png" alt="Contact mail icon">
+                        <span>My contacts</span>
                     </a>
-                    <a href="/pages/testing.html">
-                        <button>
-                            <img src="/../../assets/icons/approval.png" alt="approval icon">
-                            <label>Testing</label>
-                        </button>
+                    <a href="/pages/testing.html" aria-label="Access testing information">
+                        <img src="/../../assets/icons/approval.png" alt="Approval icon">
+                        <span>Testing</span>
                     </a>
-                    <a href="./leagal-security.html">
-                        <button>
-                            <img src="../assets/icons/legal-department.png" alt="Legal and Security icon">
-                            <label>Legal and Security</label>
-                        </button>
+                    <a href="/pages/leagal-security.html" aria-label="Read legal and security information">
+                        <img src="/../../assets/icons/legal-department.png" alt="Legal and Security icon">
+                        <span>Legal and Security</span>
                     </a>
-                    <a href="/pages/accessibility.html">
-                        <button>
-                            <img src="/../../assets/icons/accessibility.png" alt="accessibility icon">
-                            <label>Accessibility</label>
-                        </button>
+                    <a href="/pages/accessibility.html" aria-label="Learn about accessibility">
+                        <img src="/../../assets/icons/accessibility.png" alt="Accessibility icon">
+                        <span>Accessibility</span>
                     </a>
                 </fieldset>
             </footer>
         </div>
     </main>
-    <nav class="navBar">
-        <a class="navLink" href="/">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/home.png" alt="home icon">
-                <label class="navLbl" for="home icon">Home</label>
-            </button>
+    <nav class="navBar" aria-label="Primary navigation">
+        <a class="navLink navBtns" href="/" aria-label="Home">
+            <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
+            <span class="navLbl">Home</span>
         </a>
-        <a class="navLink" href="/pages/food-drink.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/fast-food.png" alt="fast food icon">
-                <label class="navLbl" for="home icon">Food & Drink</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/food-drink.html" aria-label="Food and Drink">
+            <img class="icons" src="/../../assets/icons/fast-food.png" alt="Fast food icon">
+            <span class="navLbl">Food & Drink</span>
         </a>
-        <a class="navLink" href="/pages/picninc-locations.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/picnic.png" alt="picnic icon">
-                <label class="navLbl" for="home icon">Picnic</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/picninc-locations.html" aria-label="Picnic">
+            <img class="icons" src="/../../assets/icons/picnic.png" alt="Picnic icon">
+            <span class="navLbl">Picnic</span>
         </a>
-        <a class="navLink" href="/pages/quiz.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/chat.png" alt="chat icon">
-                <label class="navLbl" for="home icon">Quiz</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/quiz.html" aria-label="Quiz">
+            <img class="icons" src="/../../assets/icons/chat.png" alt="Chat icon">
+            <span class="navLbl">Quiz</span>
         </a>
     </nav>
 </body>

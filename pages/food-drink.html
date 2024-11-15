@@ -8,19 +8,19 @@
 </head>
 <body>
     <header>
-        <label class="pageName" for="headerName">Food and Drink</label>
+        <h1 class="pageName">Food and Drink</h1>
     </header>
     <main>
         <div class="content placesContent">
             <section class="placeSection">
-                <a href="https://maps.app.goo.gl/FcauzQNXDD7sW1mx9" target="_blank">
-                    <figure class="imageContainer">
-                        <img src="../assets/img/diamond-kitchen.png" alt="Diamond Kitchen">
-                        <figcaption class="placeName">The diamond kitchen</figcaption>
-                        <div class="mapIconBlock">
-                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="placeholder">
-                        </div>
-                    </figure>
+                <a href="https://maps.app.goo.gl/FcauzQNXDD7sW1mx9" target="_blank" aria-label="The Diamond Kitchen - View on map">
+                    <div class="imageContainer">
+                        <img src="../assets/img/diamond-kitchen.png" alt="Modern kitchen with diamond-shaped countertops">
+                        <span class="placeName">The diamond kitchen</span>
+                        <span class="mapIconBlock">
+                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="Map icon">
+                        </span>
+                    </div>
                 </a>
                 <div class="placeDescriptionBlock">
                     <p class="placeDescriptionLbl">
@@ -31,14 +31,14 @@
                 </div>
             </section>
             <section class="placeSection">
-                <a href="https://maps.app.goo.gl/dpR9kp7iNnEDeW1F6" target="_blank">
-                    <figure class="imageContainer">
-                        <img src="../assets/img/heartspace-cafe.png" alt="Heartspace Café">
-                        <figcaption class="placeName">Heartspace Café</figcaption>
-                        <div class="mapIconBlock">
-                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="placeholder">
-                        </div>
-                    </figure>
+                <a href="https://maps.app.goo.gl/dpR9kp7iNnEDeW1F6" target="_blank" aria-label="Heartspace Café - View on map">
+                    <div class="imageContainer">
+                        <img src="../assets/img/heartspace-cafe.png" alt="Heartspace Café interior with seating">
+                        <span class="placeName">Heartspace Café</span>
+                        <span class="mapIconBlock">
+                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="Map icon">
+                        </span>
+                    </div>
                 </a>
                 <div class="placeDescriptionBlock">
                     <p class="placeDescriptionLbl">
@@ -49,14 +49,14 @@
                 </div>
             </section>
             <section class="placeSection">
-                <a href="https://maps.app.goo.gl/QNEoodZSaZnxtnKY7" target="_blank">
-                    <figure class="imageContainer">
-                        <img src="../assets/img/arts-tower-cafe.png" alt="Arts Tower Café">
-                        <figcaption class="placeName">Arts Tower Café</figcaption>
-                        <div class="mapIconBlock">
-                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="placeholder">
-                        </div>
-                    </figure>
+                <a href="https://maps.app.goo.gl/QNEoodZSaZnxtnKY7" target="_blank" aria-label="Arts Tower Café - View on map">
+                    <div class="imageContainer">
+                        <img src="../assets/img/arts-tower-cafe.png" alt="Arts Tower Café with coffee counter">
+                        <span class="placeName">Arts Tower Café</span>
+                        <span class="mapIconBlock">
+                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="Map icon">
+                        </span>
+                    </div>
                 </a>
                 <div class="placeDescriptionBlock">
                     <p class="placeDescriptionLbl">
@@ -67,14 +67,14 @@
                 </div>
             </section>
             <section class="placeSection">
-                <a href="https://maps.app.goo.gl/KmQChym9UuY2gWUS7" target="_blank">
-                    <figure class="imageContainer">
-                        <img src="../assets/img/jessop-cafe.png" alt="Jessop Café">
-                        <figcaption class="placeName">Jessop Café</figcaption>
-                        <div class="mapIconBlock">
-                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="placeholder">
-                        </div>
-                    </figure>
+                <a href="https://maps.app.goo.gl/KmQChym9UuY2gWUS7" target="_blank" aria-label="Jessop Café - View on map">
+                    <div class="imageContainer">
+                        <img src="../assets/img/jessop-cafe.png" alt="Jessop Café with large windows and cozy seating area">
+                        <span class="placeName">Jessop Café</span>
+                        <span class="mapIconBlock">
+                            <img class="mapIcon" src="../assets/icons/placeholder.png" alt="Map icon">
+                        </span>
+                    </div>
                 </a>
                 <div class="placeDescriptionBlock">
                     <p class="placeDescriptionLbl">
@@ -86,66 +86,48 @@
                 </div>
             </section>
             <footer>
-                <fieldset>
-                    <legend>Footer</legend>
-                    <a href="/pages/design.html">
-                        <button>
-                            <img src="/../../assets/icons/design.png" alt="design icon">
-                            <label>How I designed it</label>
-                        </button>
+                <fieldset aria-labelledby="footerLegend">
+                    <legend id="footerLegend">Footer</legend>
+                    <a href="/pages/design.html" aria-label="Learn how I designed it">
+                        <img src="/../../assets/icons/design.png" alt="Design icon">
+                        <span>How I designed it</span>
                     </a>
-                    <a href="/pages/contacts.html">
-                        <button>
-                            <img src="/../../assets/icons/contact-mail.png" alt="contact-mail icon">
-                            <label>My contacts</label>
-                        </button>
+                    <a href="/pages/contacts.html" aria-label="View my contacts">
+                        <img src="/../../assets/icons/contact-mail.png" alt="Contact mail icon">
+                        <span>My contacts</span>
                     </a>
-                    <a href="/pages/testing.html">
-                        <button>
-                            <img src="/../../assets/icons/approval.png" alt="approval icon">
-                            <label>Testing</label>
-                        </button>
+                    <a href="/pages/testing.html" aria-label="Access testing information">
+                        <img src="/../../assets/icons/approval.png" alt="Approval icon">
+                        <span>Testing</span>
                     </a>
-                    <a href="./leagal-security.html">
-                        <button>
-                            <img src="../assets/icons/legal-department.png" alt="Legal and Security icon">
-                            <label>Legal and Security</label>
-                        </button>
+                    <a href="/pages/leagal-security.html" aria-label="Read legal and security information">
+                        <img src="/../../assets/icons/legal-department.png" alt="Legal and Security icon">
+                        <span>Legal and Security</span>
                     </a>
-                    <a href="/pages/accessibility.html">
-                        <button>
-                            <img src="/../../assets/icons/accessibility.png" alt="accessibility icon">
-                            <label>Accessibility</label>
-                        </button>
+                    <a href="/pages/accessibility.html" aria-label="Learn about accessibility">
+                        <img src="/../../assets/icons/accessibility.png" alt="Accessibility icon">
+                        <span>Accessibility</span>
                     </a>
                 </fieldset>
             </footer>
         </div>
     </main>
-    <nav class="navBar">
-        <a class="navLink" href="/">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/home.png" alt="home icon">
-                <label class="navLbl" for="home icon">Home</label>
-            </button>
+    <nav class="navBar" aria-label="Primary navigation">
+        <a class="navLink navBtns" href="/" aria-label="Home">
+            <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
+            <span class="navLbl">Home</span>
         </a>
-        <a class="navLink" href="/pages/food-drink.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/fast-food.png" alt="fast food icon">
-                <label class="navLbl" for="home icon">Food & Drink</label>
-            </button>
+        <a class="navLink navBtns selected" href="/pages/food-drink.html" aria-label="Food and Drink">
+            <img class="icons" src="/../../assets/icons/fast-food.png" alt="Fast food icon">
+            <span class="navLbl">Food & Drink</span>
         </a>
-        <a class="navLink" href="/pages/picninc-locations.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/picnic.png" alt="picnic icon">
-                <label class="navLbl" for="home icon">Picnic</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/picninc-locations.html" aria-label="Picnic">
+            <img class="icons" src="/../../assets/icons/picnic.png" alt="Picnic icon">
+            <span class="navLbl">Picnic</span>
         </a>
-        <a class="navLink" href="/pages/quiz.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/chat.png" alt="chat icon">
-                <label class="navLbl" for="home icon">Quiz</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/quiz.html" aria-label="Quiz">
+            <img class="icons" src="/../../assets/icons/chat.png" alt="Chat icon">
+            <span class="navLbl">Quiz</span>
         </a>
     </nav>
 </body>

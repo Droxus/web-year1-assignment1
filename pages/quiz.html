@@ -8,182 +8,164 @@
 </head>
 <body>
     <header>
-        <label class="pageName" for="headerName">Quiz</label>
+        <h1 class="pageName">Quiz</h1>
     </header>
     <main>
         <div class="content quizContent">
             <section class="questionSection">
-                <img class="quizImg" src="../assets/img/river-sheaf.png" alt="Crookes Valley Park">
+                <img class="quizImg" src="../assets/img/river-sheaf.png" alt="River Sheaf" aria-describedby="quiz-question-1">
                 <div class="quiz">
-                    <p class="quizQn" for="quizQuestion">
-                        <label class="signLbl">?</label>
+                    <p class="quizQn" id="quiz-question-1">
+                        <span class="signLbl" aria-hidden="true">?</span>
                         Which river is Sheffield named after?
                     </p>
                     <fieldset>
                         <legend>Options</legend>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion1" value="half">
-                            <span class="signLbl">A</span>
+                        <label class="optionLabel" for="quizQuestion1A">
+                            <input type="radio" id="quizQuestion1A" name="quizQuestion1" value="half">
+                            <span class="signLbl" aria-hidden="true">A</span>
                             River Don
                         </label>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion1" value="third">
-                            <span class="signLbl">B</span>
+                        <label class="optionLabel" for="quizQuestion1B">
+                            <input type="radio" id="quizQuestion1B" name="quizQuestion1" value="third">
+                            <span class="signLbl" aria-hidden="true">B</span>
                             River Sheaf
                         </label>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion1" value="quarter">
-                            <span class="signLbl">C</span>
+                        <label class="optionLabel" for="quizQuestion1C">
+                            <input type="radio" id="quizQuestion1C" name="quizQuestion1" value="quarter">
+                            <span class="signLbl" aria-hidden="true">C</span>
                             River Trent
                         </label>
                     </fieldset>
-                    <div class="quizAn" for="quizAnswer">
-                        <div class="rotating-box">
+                    <div class="quizAn" id="quizAnswer1">
+                        <div class="rotating-box" aria-live="polite">
                             <div class="front">
-                                <p>Answer</p>
+                                <span>Answer</span>
                             </div>
                             <div class="back">
-                                <p>River Sheaf</p>
+                                <span>River Sheaf</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="questionSection">
-                <img class="quizImg" src="../assets/img/district-national-park.png" alt="Crookes Valley Park">
+                <img class="quizImg" src="../assets/img/district-national-park.png" alt="Peak District National Park" aria-describedby="quiz-question-2">
                 <div class="quiz">
-                    <p class="quizQn" for="quizQuestion">
-                        <label class="signLbl">?</label>
+                    <p class="quizQn" id="quiz-question-2">
+                        <span class="signLbl" aria-hidden="true">?</span>
                         What fraction of Sheffield's land is located within the Peak District National Park?
                     </p>
                     <fieldset>
                         <legend>Options</legend>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion2" value="half">
-                            <span class="signLbl">A</span>
+                        <label class="optionLabel" for="quizQuestion2A">
+                            <input type="radio" id="quizQuestion2A" name="quizQuestion2" value="half">
+                            <span class="signLbl" aria-hidden="true">A</span>
                             Half
                         </label>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion2" value="third">
-                            <span class="signLbl">B</span>
+                        <label class="optionLabel" for="quizQuestion2B">
+                            <input type="radio" id="quizQuestion2B" name="quizQuestion2" value="third">
+                            <span class="signLbl" aria-hidden="true">B</span>
                             A third
                         </label>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion2" value="quarter">
-                            <span class="signLbl">C</span>
+                        <label class="optionLabel" for="quizQuestion2C">
+                            <input type="radio" id="quizQuestion2C" name="quizQuestion2" value="quarter">
+                            <span class="signLbl" aria-hidden="true">C</span>
                             A quarter
                         </label>
                     </fieldset>
-                    <div class="quizAn" for="quizAnswer">
-                        <div class="rotating-box">
+                    <div class="quizAn" id="quizAnswer2">
+                        <div class="rotating-box" aria-live="polite">
                             <div class="front">
-                                <p>Answer</p>
+                                <span>Answer</span>
                             </div>
                             <div class="back">
-                                <p>A third</p>
+                                <span>A third</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="questionSection">
-                <img class="quizImg" src="../assets/img/Bramall-Lane.png" alt="Crookes Valley Park">
+                <img class="quizImg" src="../assets/img/Bramall-Lane.png" alt="Bramall Lane Stadium" aria-describedby="quiz-question-3">
                 <div class="quiz">
-                    <p class="quizQn" for="quizQuestion">
-                        <label class="signLbl">?</label>
+                    <p class="quizQn" id="quiz-question-3">
+                        <span class="signLbl" aria-hidden="true">?</span>
                         What is the name of the oldest football stadium in the world, located in Sheffield?
                     </p>
                     <fieldset>
                         <legend>Options</legend>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion3" value="half">
-                            <span class="signLbl">A</span>
+                        <label class="optionLabel" for="quizQuestion3A">
+                            <input type="radio" id="quizQuestion3A" name="quizQuestion3" value="half">
+                            <span class="signLbl" aria-hidden="true">A</span>
                             Anfield
                         </label>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion3" value="third">
-                            <span class="signLbl">B</span>
+                        <label class="optionLabel" for="quizQuestion3B">
+                            <input type="radio" id="quizQuestion3B" name="quizQuestion3" value="third">
+                            <span class="signLbl" aria-hidden="true">B</span>
                             Old Trafford
                         </label>
-                        <label class="optionLabel">
-                            <input type="radio" name="quizQuestion3" value="quarter">
-                            <span class="signLbl">C</span>
+                        <label class="optionLabel" for="quizQuestion3C">
+                            <input type="radio" id="quizQuestion3C" name="quizQuestion3" value="quarter">
+                            <span class="signLbl" aria-hidden="true">C</span>
                             Bramall Lane
                         </label>
                     </fieldset>
-                    <div class="quizAn" for="quizAnswer">
-                        <div class="rotating-box">
+                    <div class="quizAn" id="quizAnswer3">
+                        <div class="rotating-box" aria-live="polite">
                             <div class="front">
-                                <p>Answer</p>
+                                <span>Answer</span>
                             </div>
                             <div class="back">
-                                <p>Bramall Lane</p>
+                                <span>Bramall Lane</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <footer>
-                <fieldset>
-                    <legend>Footer</legend>
-                    <a href="/pages/design.html">
-                        <button>
-                            <img src="/../../assets/icons/design.png" alt="design icon">
-                            <label>How I designed it</label>
-                        </button>
+                <fieldset aria-labelledby="footerLegend">
+                    <legend id="footerLegend">Footer</legend>
+                    <a href="/pages/design.html" aria-label="Learn how I designed it">
+                        <img src="/../../assets/icons/design.png" alt="Design icon">
+                        <span>How I designed it</span>
                     </a>
-                    <a href="/pages/contacts.html">
-                        <button>
-                            <img src="/../../assets/icons/contact-mail.png" alt="contact-mail icon">
-                            <label>My contacts</label>
-                        </button>
+                    <a href="/pages/contacts.html" aria-label="View my contacts">
+                        <img src="/../../assets/icons/contact-mail.png" alt="Contact mail icon">
+                        <span>My contacts</span>
                     </a>
-                    <a href="/pages/testing.html">
-                        <button>
-                            <img src="/../../assets/icons/approval.png" alt="approval icon">
-                            <label>Testing</label>
-                        </button>
+                    <a href="/pages/testing.html" aria-label="Access testing information">
+                        <img src="/../../assets/icons/approval.png" alt="Approval icon">
+                        <span>Testing</span>
                     </a>
-                    <a href="./leagal-security.html">
-                        <button>
-                            <img src="../assets/icons/legal-department.png" alt="Legal and Security icon">
-                            <label>Legal and Security</label>
-                        </button>
+                    <a href="/pages/leagal-security.html" aria-label="Read legal and security information">
+                        <img src="/../../assets/icons/legal-department.png" alt="Legal and Security icon">
+                        <span>Legal and Security</span>
                     </a>
-                    <a href="/pages/accessibility.html">
-                        <button>
-                            <img src="/../../assets/icons/accessibility.png" alt="accessibility icon">
-                            <label>Accessibility</label>
-                        </button>
+                    <a href="/pages/accessibility.html" aria-label="Learn about accessibility">
+                        <img src="/../../assets/icons/accessibility.png" alt="Accessibility icon">
+                        <span>Accessibility</span>
                     </a>
                 </fieldset>
             </footer>
         </div>
     </main>
-    <nav class="navBar">
-        <a class="navLink" href="/">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/home.png" alt="home icon">
-                <label class="navLbl" for="home icon">Home</label>
-            </button>
+    <nav class="navBar" aria-label="Primary navigation">
+        <a class="navLink navBtns" href="/" aria-label="Home">
+            <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
+            <span class="navLbl">Home</span>
         </a>
-        <a class="navLink" href="/pages/food-drink.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/fast-food.png" alt="fast food icon">
-                <label class="navLbl" for="home icon">Food & Drink</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/food-drink.html" aria-label="Food and Drink">
+            <img class="icons" src="/../../assets/icons/fast-food.png" alt="Fast food icon">
+            <span class="navLbl">Food & Drink</span>
         </a>
-        <a class="navLink" href="/pages/picninc-locations.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/picnic.png" alt="picnic icon">
-                <label class="navLbl" for="home icon">Picnic</label>
-            </button>
+        <a class="navLink navBtns" href="/pages/picninc-locations.html" aria-label="Picnic">
+            <img class="icons" src="/../../assets/icons/picnic.png" alt="Picnic icon">
+            <span class="navLbl">Picnic</span>
         </a>
-        <a class="navLink" href="/pages/quiz.html">
-            <button class="navBtns">
-                <img class="icons" src="/../../assets/icons/chat.png" alt="chat icon">
-                <label class="navLbl" for="home icon">Quiz</label>
-            </button>
+        <a class="navLink navBtns selected" href="/pages/quiz.html" aria-label="Quiz">
+            <img class="icons" src="/../../assets/icons/chat.png" alt="Chat icon">
+            <span class="navLbl">Quiz</span>
         </a>
     </nav>
 </body>

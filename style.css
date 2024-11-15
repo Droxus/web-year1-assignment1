@@ -45,7 +45,6 @@ header {
     background: var(--main-color);
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     padding: 10px;
 }
 
@@ -75,6 +74,12 @@ header {
 }
 .navLink {
     text-decoration: none;
+}
+.selected {
+    opacity: 0.7;
+}
+.navLink:hover {
+    background: #0000000f;
 }
 
 /* remove scrollbar */
@@ -112,10 +117,10 @@ footer > fieldset > legend {
     color: var(--main-color);
     font-size: 20px;
 }
-footer > fieldset > a {
-    text-decoration: none;
+footer > fieldset > a:hover {
+    opacity: 0.7;
 }
-footer > fieldset > a > button {
+footer > fieldset > a {
     background: var(--secondary-color);
     color: var(--main-color);
     font-size: 20px;
@@ -126,14 +131,18 @@ footer > fieldset > a > button {
     grid-template-columns: 100px 1fr;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    padding: 20px;
+    width: 90%;
+    padding: 10px 5%;
     margin: 20px 0;
+    text-decoration: none;
 }
-footer > fieldset > a > button > label {
+footer > fieldset > a > span {
     justify-self: left;
 }
-footer > fieldset > a > button > img {
+footer > fieldset > a > label {
+    justify-self: left;
+}
+footer > fieldset > a > img {
     width: 64px;
 }
 
@@ -222,6 +231,7 @@ footer > fieldset > a > button > img {
     position: relative;
     width: 100%;
     margin: 0px;
+    transition: transform 0.3s ease;
 }
 .imageContainer > img {
     width: 100%;
@@ -230,6 +240,9 @@ footer > fieldset > a > button > img {
     border-radius: var(--default-border-radius);
     border: 1px solid var(--border-color);
     object-fit: cover;
+}
+.imageContainer:hover {
+    transform: scale(1.2);
 }
 .placeName {
     position: absolute;
@@ -287,6 +300,10 @@ footer > fieldset > a > button > img {
     border-radius: var(--default-border-radius);
     border: 1px solid var(--border-color);
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.quizImg:hover {
+    transform: scale(1.2);
 }
 .questionSection {
     height: fit-content;
@@ -345,7 +362,7 @@ footer > fieldset > a > button > img {
     color: var(--main-color);
 }
 .back {
-    background-color: var(--border-color);
+    background-color: var(--main-color);
     color: var(--default-color);
     transform: rotateX(180deg);
 }
@@ -382,9 +399,8 @@ footer > fieldset > a > button > img {
     padding: 20px 10px;
     cursor: pointer;
 }
-
 .optionLabel:hover {
-    background-color: var(--alternative-color); /* Hover background */
+    background-color: var(--alternative-color);
     border-color: var(--border-color);
 }
 .optionLabel input[type="radio"] {
@@ -392,12 +408,12 @@ footer > fieldset > a > button > img {
     display: none;
 }
 input[type="radio"]:checked + .signLbl {
-    background-color: var(--main-color); /* Selected label background */
+    background-color: var(--main-color);
     color: var(--default-color); 
 }
 input[type="radio"]:checked ~ span {
     font-weight: bold;
-    color: var(--main-color); /* Selected option text */
+    color: var(--main-color);
     background-color: var(--opacity-color);
 }
 
@@ -432,7 +448,7 @@ input[type="radio"]:checked ~ span {
     color: var(--main-color);
     font-size: 16px;
 }
-.contactsBlock > fieldset > label {
+.contactsBlock > fieldset > span {
     margin: 10px 20px;
     border-radius: var(--default-border-radius);
     color: var(--main-color);
@@ -480,7 +496,7 @@ input[type="radio"]:checked ~ span {
 .contactsForm > button {
     width: 50%;
     margin: 10px 0px;
-    background: var(--border-color);
+    background: var(--main-color);
     border-radius: var(--default-border-radius);
     color: var(--default-color);
     padding: 10px 10px;
