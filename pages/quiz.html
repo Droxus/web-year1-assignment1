@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1: Quiz</title>
+    <meta name="author" content="Oleksandr Krasnovidov">
+    <!-- Link to the main CSS file for consistent styling across pages -->
     <link rel="stylesheet" href="/../../style.css">
 </head>
 <body>
     <header>
+        <!-- Heading for the quiz page -->
         <h1 class="pageName">Quiz</h1>
     </header>
     <main>
         <div class="content quizContent">
+            <!-- Each section below represents a question in the quiz -->
             <section class="questionSection">
+                <!-- Quiz image related to the question, with alt text and aria-describedby for accessibility -->
                 <img class="quizImg" src="../assets/img/river-sheaf.png" alt="River Sheaf" aria-describedby="quiz-question-1">
                 <div class="quiz">
+                    <!-- Quiz question with an accessible label for screen readers -->
                     <p class="quizQn" id="quiz-question-1">
                         <span class="signLbl" aria-hidden="true">?</span>
                         Which river is Sheffield named after?
                     </p>
                     <fieldset>
                         <legend>Options</legend>
+                        <!-- Radio button options for the quiz question -->
                         <label class="optionLabel" for="quizQuestion1A">
                             <input type="radio" id="quizQuestion1A" name="quizQuestion1" value="half">
                             <span class="signLbl" aria-hidden="true">A</span>
@@ -37,6 +44,7 @@
                             River Trent
                         </label>
                     </fieldset>
+                    <!-- Answer section with a rotating effect for interactivity -->
                     <div class="quizAn" id="quizAnswer1">
                         <div class="rotating-box" aria-live="polite">
                             <div class="front">
@@ -58,6 +66,7 @@
                     </p>
                     <fieldset>
                         <legend>Options</legend>
+                        <!-- Each radio input allows users to choose one answer per question -->
                         <label class="optionLabel" for="quizQuestion2A">
                             <input type="radio" id="quizQuestion2A" name="quizQuestion2" value="half">
                             <span class="signLbl" aria-hidden="true">A</span>
@@ -95,6 +104,7 @@
                     </p>
                     <fieldset>
                         <legend>Options</legend>
+                        <!-- Options labeled A, B, and C, allowing only one selection per question -->
                         <label class="optionLabel" for="quizQuestion3A">
                             <input type="radio" id="quizQuestion3A" name="quizQuestion3" value="half">
                             <span class="signLbl" aria-hidden="true">A</span>
@@ -124,6 +134,7 @@
                 </div>
             </section>
             <footer>
+                <!-- Footer links to additional pages such as Design, Contacts, Testing, Legal & Security, Accessibility -->
                 <fieldset aria-labelledby="footerLegend">
                     <legend id="footerLegend">Footer</legend>
                     <a href="/pages/design.html" aria-label="Learn how I designed it">
@@ -138,7 +149,7 @@
                         <img src="/../../assets/icons/approval.png" alt="Approval icon">
                         <span>Testing</span>
                     </a>
-                    <a href="/pages/leagal-security.html" aria-label="Read legal and security information">
+                    <a href="/pages/legal-security.html" aria-label="Read legal and security information">
                         <img src="/../../assets/icons/legal-department.png" alt="Legal and Security icon">
                         <span>Legal and Security</span>
                     </a>
@@ -151,6 +162,7 @@
         </div>
     </main>
     <nav class="navBar" aria-label="Primary navigation">
+        <!-- Navigation bar with links to major pages, including Home, Food & Drink, Picnic, and Quiz -->
         <a class="navLink navBtns" href="/" aria-label="Home">
             <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
             <span class="navLbl">Home</span>

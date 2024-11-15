@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1: Contacts</title>
+    <meta name="author" content="Oleksandr Krasnovidov">
     <link rel="stylesheet" href="/../../style.css">
 </head>
 <body>
+    <!-- Page header with the main title -->
     <header>
         <h1 class="pageName">Contacts</h1>
     </header>
+
+    <!-- Main content area for contact information and form -->
     <main>
         <div class="content quizContent">
             <section class="questionSection" aria-labelledby="contact-info">
                 <div class="contactsBlock">
+                    <!-- Section containing static contact information -->
                     <fieldset>
                         <legend id="contact-info">My contact details</legend>
                         <span>My name: Oleksandr Krasnovidov</span>
                         <span>My email: okrasnovidov1@sheffield.ac.uk</span>
                     </fieldset>
+
+                    <!-- Section with a form for leaving comments -->
                     <fieldset>
                         <legend>Leave a comment</legend>
                         <form class="contactsForm" action="mailto:okrasnovidov1@sheffield.ac.uk" method="post" enctype="text/plain" id="comment-form">
+                            <!-- Input field for user's email address -->
                             <div>
                                 <label for="email">Your email:</label>
                                 <input type="email" id="email" name="email" maxlength="254" autocomplete="off" required aria-required="true" aria-label="Email address">
                             </div>
+                            <!-- Textarea for user's comment -->
                             <div>
                                 <label for="yourComment">Your comment:</label>
                                 <textarea name="comment" id="yourComment" maxlength="500" required aria-required="true" aria-label="Comment"></textarea>
                             </div>
+                            <!-- Submit button to send the form -->
                             <button type="submit" aria-label="Submit comment">Submit</button>
                         </form>
                     </fieldset>
                 </div>
             </section>
+
+            <!-- Footer section with links to other pages -->
             <footer>
                 <fieldset aria-labelledby="footerLegend">
                     <legend id="footerLegend">Footer</legend>
@@ -62,6 +74,8 @@
             </footer>
         </div>
     </main>
+
+    <!-- Navigation bar at the bottom with links to various sections of the site -->
     <nav class="navBar" aria-label="Primary navigation">
         <a class="navLink navBtns" href="/" aria-label="Home">
             <img class="icons" src="/../../assets/icons/home.png" alt="Home icon">
